@@ -20,7 +20,64 @@
         </nav>
 
         <div>
+            <div>
             <img src="/img/background photo.jpg" width="1200" height="509" alt="Main Sedona">
+        </div>
+
+        <div>
+            <h2 class="visually-hidden">Фильтр отелей</h2>
+
+            <form action="http://echo.htmlacademy.ru" method="POST">
+            
+                <fieldset>
+                    <legend>Инфраструктура</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="swimmingpool" id="filter-swimmingpool" checked>
+                            <label for="filter-swimmingpool"> Бассейн</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="parking" id="filter-parking">
+                            <label for="filter-parking">Парковка</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="wi-fi" id="filter-wi-fi">
+                            <label for="filter-wi-fi">Wi-fi</label>
+                        </li>
+                        
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Тип жилья</legend>
+                    <ul>
+                        <li>
+                            <input type="checkbox" name="hotel" id="filter-hotel"checked>
+                            <label for="filter-hotel">Гостиница</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="motel" id="filter-motel" checked>
+                            <label for="filter-motel">Мотель</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="apartment" id="filter-apartment" checked>
+                            <label for="filter-apartment">Апартаменты</label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Стоимость услуг</legend>
+                    <div><input type="text" name="price-from"></div>
+                    <div>
+                        <input type="text" name="price-till">
+                    </div>
+
+                </fieldset>
+            <button type="submit">Показать</button>
+            </form>
+        </div>
+
          </div>
     </header>
     
